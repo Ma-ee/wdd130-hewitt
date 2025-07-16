@@ -1,0 +1,140 @@
+/*Colors: #f0e7d9, #4d392d	#a8b9a3	#e5a692 */
+@font-face {
+  font-family: 'Playfair';
+  src: url('../fonts/Playfair-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Quicksand";
+    background: #efece6;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background: #f0e7d9;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: #515551 1px 1px 3px;
+}
+nav h2 {
+    font-size: max(16px, 2vw);
+    min-height: 60px;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    font-family: "Playfair";
+    color: #4d392d;
+    font-style: italic;
+}
+nav a{
+    box-sizing: border-box;
+    font-size: max(18px, 2vw);
+    min-height: 60px;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    text-decoration: none;
+    color: #4d392d;
+}
+#viewing {
+    background: #e8debe;
+    text-shadow: #636863 1px 1px 2px;
+}
+nav a:hover {
+    background: #F0E4CF;
+}
+#logo {
+    box-sizing: border-box;
+    width: 12vw;
+    height: 8vw;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 0;
+    margin-right: 10px;
+    align-self: center;
+}
+h1 {
+    font-family: 'Playfair';
+    color: #a8b9a3;
+    font-style: italic;
+}
+main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    margin: auto;
+}
+.card {
+    margin: auto;
+    align-content: center;
+    width: 100%;
+    margin-top: 60px;
+    background: #a8b9a3;
+    padding: 0 30px 30px 30px;
+    box-sizing: border-box;
+}
+section img {
+    width: 100%;
+}
+section p {
+    margin: auto;
+    font-size: max(14px, 1.6vw);
+    font-family: "Playfair";
+}
+h3 {
+    text-align: left;
+    align-content: center;
+    font-family: "Playfair";
+    font-style: italic;
+    font-size: max(14px, 1.8vw);
+    color: #e0edd9;
+    text-shadow: #636363 1px 1px 2px;
+}
+footer {
+    font-style: bold;
+    font-size: max(14px, 1.8vw);
+    font-family: "Playfair";
+    background: #f0e7d9;
+    align-content: center;
+    margin-top: 60px;
+}
+footer p {
+    height: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 5px 10px 0 10px;
+    }
+    main {
+        padding: 0 5% 0 5%;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    .card {
+        margin-top: 40px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
